@@ -43,7 +43,7 @@ public class PrometheusScrapeEndpoint {
 		this.collectorRegistry = collectorRegistry;
 	}
 
-	@ReadOperation(produces = TextFormat.CONTENT_TYPE_004)
+	@ReadOperation
 	public String scrape() {
 		try {
 			Writer writer = new StringWriter();
